@@ -1,0 +1,114 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  line-height: 1.6em;
+  background-color: #f4f4f4;
+  font-weight: 300;
+  background-color: rgb(247, 247, 247);
+}
+.tab-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 20px 0;
+}
+.heading {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.heading h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.heading h1 span {
+  color: crimson;
+}
+/* Tab Button */
+.tab-btn {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.tab-btn li {
+  float: left;
+  width: 120px;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid transparent;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+.tab-btn li span {
+  padding-right: 5px;
+}
+.tab-btn li span img {
+  vertical-align: middle;
+  width: 15px;
+}
+.tab-btn li:hover,
+.tab-btn li.active {
+  color: #f97f40;
+  font-weight: 600;
+  filter: none;
+}
+.tab-btn li:last-child {
+  border-right: none;
+  width: 170px;
+}
+.tabs {
+  border-top: none;
+  padding: 40px;  
+}
+.tabs img {
+  width: 400px;
+  height: 300px;
+  margin-left: 30px; 
+}
+.tabs .img-2 {
+  width: 380px;
+  height: 270px;
+  margin-left: 40px;
+}
+.tabs .img-3 {
+  width: 380px;
+  height: 280px;
+  margin-left: 40px;
+}
+.tabs .img-4 {
+  width: 380px;
+  height: 260px;
+}
+.tabs .img-5 {
+  width: 380px;
+  height: 330px;
+}
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+.tab h2 {
+  font-size: 26px;
+  display: inline-block;
+}
+.tab img {
+  float: right;
+}
+.tab p {
+  overflow: hidden;
+  text-align: justify;
+}

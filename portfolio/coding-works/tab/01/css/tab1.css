@@ -1,0 +1,162 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+
+}
+.tab-inner {
+  height: 660px;
+  text-align: center;
+  position: relative;
+}
+.tab-inner h2 {
+  font-weight: 300;
+  line-height: 60px;
+  font-size: 2.5em;
+  animation: down 0.8s ease-out;
+}
+@keyframes down {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+.tab-inner h2 b {
+  font-weight: 500;
+}
+.slide {
+  width: 800px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  animation: up 0.8s ease-out;
+  animation-delay: 0;
+  
+}
+@keyframes up {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  
+}
+.slide-inner {
+  width: 4800px;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+}
+.content {
+  width: 800px;
+  padding: 10px 50px 50px 50px;
+  box-sizing: border-box;
+  float: left;
+}
+.face {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.face img {
+  width: 100%;
+}
+.name {
+  margin-top: 30px;
+  color: #333;
+}
+.name p {
+  margin-top: 10px;
+}
+.name b {
+  font-size: 24px;
+}
+.name .category {
+ font-weight: 600;
+}
+.text {
+  line-height: 28px;
+}
+input[name=tabmenu] {
+  display: none;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  animation: show 1s ease-out;
+  
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+.btn label {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  display: inline-block;
+  cursor: pointer;
+ 
+}
+input[id=tab1]:checked ~ .slide .slide-inner  {
+  left:0;
+}
+input[id=tab2]:checked ~ .slide .slide-inner  {
+  left:-800px;
+}
+input[id=tab3]:checked ~ .slide .slide-inner  {
+  left:-1600px;
+}
+input[id=tab4]:checked ~ .slide .slide-inner  {
+  left:-2400px;
+}
+input[id=tab5]:checked ~ .slide .slide-inner  {
+  left:-3200px;
+}
+input[id=tab6]:checked ~ .slide .slide-inner  {
+  left:-4000px;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3],
+input[id=tab4]:checked ~ .btn label[for=tab4],
+input[id=tab5]:checked ~ .btn label[for=tab5],
+input[id=tab6]:checked ~ .btn label[for=tab6] {
+  background-color: crimson;
+  border-radius: 50%;
+}
+
+
+
+
+

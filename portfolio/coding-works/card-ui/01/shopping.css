@@ -1,0 +1,172 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+.item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.item img {
+
+}
+.item .detail {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: -175px;
+  left: 0;
+  height: 60%;
+  transition: 0.5s;
+}
+.item:hover .detail {
+  bottom: 0;
+}
+.item .detail .title {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-sizing: border-box; 
+}
+.item .detail .title-wrap{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.item .detail .title-wrap h3 {
+  font-weight: 600;
+}
+.item .detail .title-wrap .color {
+  color: crimson;
+}
+.item .detail .title p {
+  margin: 0;
+  font-size: 14px;
+  color: #757575;
+}
+.item .detail .content {
+  width: 90%;
+  margin: auto;
+}
+.item .detail .content .sizes {
+  width: 100%;
+  padding-top: 10px;
+}
+.item .detail .content .sizes .sizes-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+}
+.item .detail .content .sizes .sizes-wrap p {
+  font-weight: 600; 
+}
+.item .detail .content .sizes .sizes-wrap i {
+  color: #dadada;
+  transition: 0.3s;
+}
+.item .detail .content .sizes .sizes-wrap i.active {
+  color: crimson;
+}
+.item .detail .content .sizes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item .detail .content .sizes li {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 5px;
+}
+.item .detail .content .sizes li:hover{
+  background-color: #000;
+  color: #fff;
+}
+.item .detail .content .color {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  margin-top: 10px; 
+}
+.item .detail .content .color p {
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.item .detail .content .color ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item .detail .content .color ul li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.item .detail .content .color ul li.active{
+  border-radius: 50%;
+}
+.item .detail .content .color ul li:nth-child(1) {
+  background-color:darkkhaki;
+}
+.item .detail .content .color ul li:nth-child(2) {
+  background-color:crimson;
+}
+.item .detail .content .color ul li:nth-child(3) {
+  background-color:lightpink;
+}
+.item .detail .content .color ul li:nth-child(4) {
+  background-color:lightskyblue;
+}
+.item .detail .content .color ul li:nth-child(5) {
+  background-color:blue;
+}
+.item .detail a {
+  width: 90%;
+  height: 30px;
+  margin: auto;
+  display: block;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.item .detail a:hover{
+  background: #000;
+  color: #fff;
+
+}
+
+
+
+

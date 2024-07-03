@@ -1,0 +1,68 @@
+@media all and (max-width: 1260px) {
+
+  /* section_2  */
+  .se_contents {
+    width: 50%;
+    float: left;
+    margin-left: 20%;
+  }
+
+  .data h3 {
+    font-size: 50px;
+  }
+
+  /* section_3  */
+  .se_3_title p {
+    font-size: 15px;
+    letter-spacing: -1px;
+  }
+
+  .se_3_co_wrap {
+    width: 95%;
+    height: 588px;
+  }
+
+  .se_3_co_box {
+    float: left;
+    width: 32.5%;
+    height: 100%;
+    margin-right: 1%;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .se_3_co_box::after {
+    width: 93%;
+    height: 93%;
+  }
+
+  /* section_4  */
+  .se_4_co_wrap {
+    width: 90%;
+  }
+
+  /* section_5  */
+  .se_5_co_wrap {
+    width: 90%;
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .se_5_co_wrap li {
+    padding-top: 70px;
+    box-sizing: border-box;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    width: 23.6%;
+    margin-right: 1.5%;
+  }
+
+  /* footer  */
+  .footer_menu {
+    padding-bottom: 5%;
+    padding-top: 90px;
+    overflow: hidden;
+  }
+}

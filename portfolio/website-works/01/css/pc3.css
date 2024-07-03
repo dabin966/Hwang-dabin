@@ -1,0 +1,49 @@
+@media all and (max-width: 1525px) {
+
+  /* header */
+  .sitemap .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* section_2  */
+  .se_2_title p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .se_2_title h3 {
+    font-size: 48px;
+  }
+
+  .se_2_title h3::after {
+    top: 30px;
+    left: 280px;
+  }
+
+  .data h3 {
+    font-size: 58px;
+  }
+
+  /* section_3  */
+  .se_3_text_box p {
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .se_3_text_box h3 {
+    font-size: 30px;
+  }
+
+  .se_3_co_box::after {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* section_6 news  */
+  .text {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolling-menu</title>
+  <style>
+    /* Google Web Fonts CDN */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+    html {
+      height: 100%;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    body {
+      min-height: 100%;
+      background: linear-gradient(180deg, #DCE35B, #45B649);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+    }
+    h1 {
+      font-size: 1.8em;
+      color: white;
+      margin-bottom: 50px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+    ul {
+      background-color:#fff;
+      border-radius: 15px;
+      margin: 0;
+      padding: 0 30px;
+      box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+    }
+    ul  {
+      display: inline-block;
+      text-align: center;
+      height: 60px;
+      overflow: hidden;
+      list-style: none;
+    }
+    ul li {
+      float: left;
+      height: 100%;
+      margin: 0 30px;
+    }
+    ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+    }
+    ul li * {
+      display: inline-block;
+      line-height: 56px;
+      
+    }
+    ul li a {
+      margin-top: -56px;
+      transition: 0.3s cubic-bezier(0.1,0.1,0.5,1.4);
+    }
+    ul li a:hover {
+      margin-top: 0;
+    }
+    ul li a::before {
+      content:attr(data-text);
+      display: block;
+      color: #45B649;
+    
+    }
+
+  
+
+
+  </style>
+</head>
+
+<body>
+  <h1>Rolling Navigation</h1>
+  <ul>
+    <li><a href="" data-text="메일">메일</a></li>
+    <li><a href="" data-text="카페">카페</a></li>
+    <li><a href="" data-text="블로그">블로그</a></li>
+    <li><a href="" data-text="지식IN">지식IN</a></li>
+    <li><a href="" data-text="쇼핑">쇼핑</a></li>
+    <li><a href="" data-text="Pay">Pay</a></li>
+    <li><a href="" data-text="사전">사전</a></li>
+    <li><a href="" data-text="뉴스">뉴스</a></li>
+  </ul>
+  
+</body>
+</html>

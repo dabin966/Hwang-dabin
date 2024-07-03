@@ -1,0 +1,96 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Jua', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: 500;
+  font-size: 43px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  margin: 10px;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 5px;
+ 
+}
+.content {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.card:nth-child(1) .content {
+  background: linear-gradient(to top, crimson, transparent);
+}
+.card:nth-child(2) .content {
+  background: linear-gradient(to top, dodgerblue, transparent);
+}
+.card:nth-child(3) .content {
+  background: linear-gradient(to top, rgb(112, 90, 30), transparent);
+}
+.card:nth-child(4) .content {
+  background: linear-gradient(to top, rgb(8, 4, 68), transparent);
+}
+
+.content h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.content h2 span {
+  display: block;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.card:hover .content {
+  top: 0;
+}
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.21);
+}
+
+
+
+
+
+
+
+
+
+
+

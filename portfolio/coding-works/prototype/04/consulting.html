@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>인테리어 상담신청 | LX하우시스</title>
+	<link rel="stylesheet" href="consulting.css">
+<body>
+   <div class="overlay"></div>
+	<section>
+		<div class="consulting-header">
+			<h1>
+				<span>LX하우시스 인테리어 상담신청</span>
+			</h1>
+			
+			<p><b>인테리어,어디서부터 어떻게 해야할지 고민되시죠!</b><br/>
+				인테리어 상담신청을 남겨주시면 전화상담을 통해 지역 내 우수
+				인테리어점을 연계해 드립니다.
+			</p>
+			
+			
+		</div>
+		<div class="consulting-form">
+			<form>
+				<div class="row">
+				<div class="date">
+					<label class="title">시공 시기는 언제로 희망하시나요?<em>*</em></label>
+					<label for="date1"><input type="radio" name="date" id="data1"> 1개월 이내 </label>
+					<label for="date2"><input type="radio" name="date" id="data2">4개월 이내 </label>
+					<label for="date3"> <input type="radio" name="date" id="data2">4개월 이후</label>
+					<label for="date4"> <input type="radio" name="date" id="data2">미정</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="route-s">
+					<label class="title">지인 인테리어를 알게 되신 경로를 선택해주세요<em>*</em></label>
+				   <select name="route" id="route-select">
+						<option value="">선택해주세요.</option>
+						<option value="tv">TV광고</option>
+						<option value="search">인터넷검색</option>
+						<option value="introduce">지인소개</option>
+						<option value="showroom">전시장</option>
+						<option value="interior store">인테리어점</option>
+						<option value="cafe">인테리어 카페 혹은 지역카페</option>
+						<option value="apartment-board">아파트 게시판</option>
+						<option value="leaflet">전단지 광고</option>
+						<option value="online-banner">온라인 광고배너</option>
+						<option value="lg-membership">LG전자 멤버쉽</option>
+						<option value="u+">U+ 멤버쉽</option>
+						<option value="etc">기타</option>
+
+					 </select>
+				</div>
+			</div>
+				<div class="row">
+					<div class="field">
+						<label>이름 <em>*</em></label>
+						<input type="text" required placeholder="이름을 입력하세요.">
+					</div>
+					<div class="field">
+						<label>이메일 <em>*</em></label>
+						<input type="email" required placeholder="이메일을 입력하세요.">
+					</div>
+				</div>
+				<div class="row">
+					<div class="field">
+						<label>연락처 <em>*</em></label>
+						<input type="tel" required placeholder="연락처를 입력하세요.">
+					</div>
+					<div class="field">
+						<label>상담구분 <em>*</em></label>
+						<select required>
+							<option value="">선택하세요</option>
+							<option value="">1:1문의</option>
+							<option value="">매장상담</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="field">
+						<label>상담내용 <em>*</em></label>
+						<textarea rows="5" required placeholder="상담 접수가 이루어진 후 24시간 내에 연락드리겠습니다. 감사합니다."></textarea>
+					</div>
+				</div>
+				<div class="policy">
+					<h4>개인정보 취급방침 (필수)</h4>
+					<iframe src="policy.html" frameborder="0"></iframe>
+					<div class="agreement">
+						<input type="checkbox" id="chk"> <label for="chk">개인정보 취급방침을 읽었으며 이에 동의합니다.</label>
+					</div>
+					<button class="btn-submit">상담신청</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+</body>
+</html>

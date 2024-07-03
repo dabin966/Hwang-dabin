@@ -1,0 +1,25 @@
+@media all and (max-width: 1551px) {
+  /* section_6  */
+  .left_text h1 {
+    font-size: 50px;
+  }
+  .left_text {
+    float: left;
+    padding-left: 10%;
+    padding-top: 2%;
+    width: 31%;
+  }
+  .brandstory_wrapper .left_text .story {
+    display: none;
+    font-size: 14px;
+  }
+  .brandstory_wrapper .left_text .story2 {
+    font-size: 18px;
+    display: block;
+    line-height: 200%;
+    color: #7f7f7f;
+  }
+  .right_img {
+    float: right;
+  }
+}

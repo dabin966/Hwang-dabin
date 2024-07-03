@@ -1,0 +1,220 @@
+/* Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+* {margin: 0; padding: 0;}
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.open-navi,
+.close-navi {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 100px;
+  z-index: 9; 
+  text-align: center;
+  line-height: 100px;
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.open-navi {
+  left: 0;
+  background-color: #fff;
+}
+.close-navi {
+  right:-100px;
+  background-color: #000;
+  color: #fff;
+}
+.open-navi.active {
+  left:-60px;
+}
+.close-navi.active{
+  right: 0;
+}
+.main-preview {
+  width: 100%;
+  height: 100vh;
+}
+.main-preview .left {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  float: left;
+  position: relative; 
+}
+.main-preview .left span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%,-50%);
+}
+.main-preview .right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/front.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.enter h1 {
+  font-size: 10em;
+}
+.enter h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.04em;
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+  background: linear-gradient(to top, #fff 0%, transparent 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.3;
+}
+.enter a{
+  width: 180px;
+  height: 50px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  line-height: 50px;
+  font-size: 1.2em;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  transform: translateY(80px);
+  position: relative;
+  z-index: 99;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.enter a:after{
+  content: "";
+  width: 180px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: -180px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.enter a:hover::after {
+  left: 0;
+}
+.enter a:hover{
+  color: #000;
+}
+.main .logo img:nth-child(1) {
+  width: 450px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+}
+.main {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.logo {
+ background-color: #fcfcfc;
+ width: 50%;
+ height: 100%;
+ position: absolute;
+ /* box-shadow: 10px 0 30px rgb(0 0 0 / 10%); */
+ z-index: 999;
+}
+
+.logo div {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;  
+}
+.logo div img {
+  border: 10px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+}
+.logo div img:first-child {
+  width: 450px;
+  left: 30%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  
+}
+.logo div img:last-child {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  
+}
+.navi {
+  width: 50%;
+  height: 100%;
+  background-color: #f1f1f1;
+  font-family: 'Playfair Display', sans-serif;
+  position: absolute;
+  left: 50%;
+  z-index: 1000;
+
+}
+.navi ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10%;
+
+}
+.navi ul li a {
+  color: #000;
+  font-size: 80px;
+  line-height: 100px;
+  position: relative;
+}
+.navi ul li a::before {
+  content:"";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 0;
+  height: 41%;
+  background-color: #ff6f5c;
+  z-index: -1;
+  transition: 0.5s;
+}
+.navi ul li a:hover::before {
+  width: 100%;
+}
+
+
+
+
+

@@ -1,0 +1,66 @@
+@media all and (max-width: 1200px) {
+  /* section_2  */
+  .se_2_title_wrap .pc-version {
+    display: none;
+  }
+  .se_2_title_wrap .tab-version {
+    display: block;
+  }
+  .sec_2_title {
+    padding-bottom: 10%;
+  }
+  .se_2_title_wrap .btn {
+    width: 32%;
+    font-size: 14px;
+  }
+  /* section_3  */
+  .se3_box {
+    width: 19%;
+    margin-right: 1%;
+  }
+  /* section_4  */
+  .se_4_title_wrap .btn {
+    width: 32%;
+    font-size: 14px;
+  }
+  /* section_6  */
+  .section_6 .brand .left_text {
+    padding-left: 10%;
+  }
+  .section_6 .brand .left_text h1 {
+    font-size: 38px;
+  }
+  .section_6 .brand .left_text .story {
+    display: none;
+    font-size: 14px;
+  }
+  .section_6 .brand .left_text .story2 {
+    font-size: 15px;
+    display: block;
+    line-height: 200%;
+    color: #7f7f7f;
+  }
+  .challenge_right .chall_title p {
+    font-size: 20px;
+  }
+  .challenge_right .title_img {
+    width: 80%;
+  }
+  .section_6 .brand .right_img {
+    float: right;
+    width: 58%;
+  }
+  .challenge_right .cha_co_title h3 {
+    font-size: 26px;
+  }
+  .challenge_right .cha_co_title p {
+    font-size: 15px;
+  }
+  /* section_7  */
+  .insta_text_move {
+    width: 300%;
+  }
+  .insta_text_move img {
+    width: 100%;
+  }
+}

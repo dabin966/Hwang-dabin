@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>키프레임 애니메이션 로딩화면2</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    body {
+      background: #fff;
+    }
+    .loading {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      /* background-color: lightgoldenrodyellow; */
+    }
+    .loading span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(0.5);
+      animation: fade 1.5s infinite linear;
+    }
+    .circle {
+      width: inherit;
+      height: inherit;
+      border: 5px solid #ddd;
+      border-radius: 50%;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right-color: #222;
+      border-left-color: #222;
+      animation: circle 1s infinite linear ;
+    }
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes circle {
+      0% {
+        transform: rotate(0deg);
+
+      }
+      100%{
+        transform: rotate(360deg);
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <span>LOADING</span>
+    <div class="circle"></div>
+  </div>
+  
+
+</body>
+</html>

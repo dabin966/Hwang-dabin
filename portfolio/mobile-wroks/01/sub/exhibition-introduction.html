@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아트스펙트럼</title>
+  <!-- Fontawesome  -->
+  <script src="https://kit.fontawesome.com/65e14ac070.js" crossorigin="anonymous"></script>
+ </head>
+ <style>
+  /* font */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+  *{margin: 0; padding: 0;}
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .wrap {
+    width: 100%;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .main-img {
+    width:100%;        
+    height: 450px;
+    background-image: url(../images/introduction-main.jpg);
+    background-attachment: fixed;
+    position: relative;
+  }
+  .main-img i {
+    color: white;
+    position: relative;
+    left: 30px;
+    top: 20px;
+  }
+  .main-img i:nth-child(1) {
+    margin-right: 10px;
+  }
+  .main-img::after {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+  }
+  .contents {
+    width: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    top: -50px;
+  }
+  .contents-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-title {
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .line {
+    width: 37px;
+    height: 4px;
+    background-color: #ddd;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .exhibition-name {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .exhibition-name h2 {
+    float: left;
+  }
+  .exhibition-name span {
+    width: 50px;
+    height: 20px;
+    background-color: #d91900;
+    border-radius: 25px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    float: right;
+    margin-top: 8px;
+  }
+  .exhibition-location {
+    width: 100%;
+    color: #6b6b6b;
+    font-weight: 600;
+    padding: 5px 0;
+  }
+  .exhibition-date  {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    color: #6b6b6b;
+  }
+  .exhibition-date p {
+    float: left;
+  }
+  .exhibition-icon {
+    height: 25px;
+    float: right; 
+    margin-top: -10px;
+  }
+  .exhibition-icon span {
+    width: 30px;
+    height: 100%;
+    display: block;
+    float: left;
+  }
+  .exhibition-icon .like {
+    height: 30px;
+    position: relative;
+    background:url(../images/like.png) 0 0  no-repeat;
+    line-height: 30px;
+    display: block;
+    margin-right: 10px;
+  }
+  .exhibition-icon .like::after {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:url(../images/like.png) 0 0  no-repeat;
+    transition: all .5s;
+  }
+  .icon:hover::after {
+    width: 30px;
+  }
+  .exhibition-icon .share {
+    height: 30px;
+    line-height: 30px;
+    background-image: url(../images/share.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 2px;
+  }
+  .ticketing {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+  }
+  .ticketing div {
+    width: 150px;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    font-weight: 600;
+  }
+  .ticketing div:nth-child(1) {
+    border: 1px solid #d91900;
+    margin-right: 25px;
+  }
+  .ticketing div:nth-child(1) a {
+    color: #d91900;
+  }
+  .ticketing div:nth-child(2) {
+    border: 1px solid #0e0e0e;
+  }
+  .ticketing div:nth-child(2) a {
+    color: #0e0e0e;
+  }
+  /* main-title end */
+  .information{
+    width: 100%;
+    overflow: hidden;
+    padding:20px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  .information ul {
+    width: 100%;
+  }
+  .information ul li {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .information ul li span {
+    float: left;
+  }
+  .information ul li span em {
+    font-style: normal;
+  }
+  .information ul li span:nth-child(1) {
+    width: 20%;
+    font-weight: 600; 
+  }
+  .information ul li span:nth-child(2) {
+    width: 80%;
+    letter-spacing: -1px;
+    color: #878f97;
+  }
+  /* information end  */
+  .exhibition-overview {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .overview-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .video-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  video {
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+  }
+  .description {
+    color: #868e96;
+    line-height: 28px;
+    text-align: justify;
+  }
+</style>
+<body>
+  <div class="wrap">
+    <section class="main-img">
+      <a href="../html/active.html"> <i class="fa-solid fa-arrow-left"></i></a>
+      <a href="../html/index.html"><i class="fa-solid fa-house"></i></a>
+    </section>
+    <section class="contents">
+      <div class="contents-inner">
+      <div class="main-title">
+        <div class="line"></div>
+        <div class="exhibition-name">
+          <h2>아트스펙트럼</h2>
+          <span>전시중</span>
+         </div>
+         <p class="exhibition-location">그라운드 갤러리</p>
+         <div class="exhibition-date">
+          <p>2022.03.02 ~ 2022.07.03</p>
+          <div class="exhibition-icon">
+            <span class="like"></span>
+            <span class="share"></span>
+          </div>
+         </div>
+         <div class="ticketing">
+          <div><a href="../sub/tiket.html">예매하기</a></div>
+          <div><a href="#none">지도보기</a></div>
+        </div>
+      </div>
+      <!-- main-title end  -->
+      <div class="information">
+        <ul>
+          <li>
+            <span>운영시간</span>
+            <span>
+              화요일 ~ 일요일 10:00 ~ 18:00 <br/>
+               <em>(입장마감 17:30)</em>
+            </span>
+          </li>
+          <li>
+            <span>휴관일</span>
+            <span>매주 월요일</span>
+          </li>
+          <li>
+            <span>이용요금</span>
+            <span>
+              일반 (만 25 ~ 64세) 15,000원<br/>
+              청년 (만 19 ~ 24세) 및 대학(원)생 7,500원<br/>
+              청소년 (만 7 ~ 18세) 7,500원<br/>
+              시니어 (만 65세 이상) 7,500원<br/>
+              장애인 (본인 및 동반 1인), 국가유공자 7,500원<br/>
+              미취학 아동 (~ 만 6세) 무료<br/>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- information end  -->
+      <div class="exhibition-overview">
+        <h3 class="overview-title">전시개요</h3>
+        <div class="video-box">
+          <video poster="../images/video.jpg" muted loop controls src="../video/art.mp4"></video>
+        </div>
+        <div class="description">
+          아트스펙트럼의 20년 역사 동안 한국 현대미술계는
+          급격히 변화하였습니다. 회화나 조각 같은 전통 장르
+          를 넘어 영상과 설치가 주류를 이루는가 하면, 퍼포먼
+          스와 관객 참여 같은 새로운 접근도 일상화 되었습니다.
+          국내외에서 수학한 젊은 작가들은 다양한 시도로 장르
+          의 범위를 넘나들고, 전시 관람의 형태를 다양화하며
+          미술의 영역을 넓혀 나갔으며, 세대, 젠더 같은 새로운
+          구분을 통해 이전 시대와 차별화되는 작가 정체성을
+          확립해가고 있습니다.
+        </div>
+      </div>
+      <div class="content-bottom-border"></div>
+    </div>
+    </section>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,21 @@
+@media all and (max-width: 655px) {
+  /* section4 : Material */
+  .ma_text_t {
+    left: 58%;
+  }
+  .ma_text_t h3 {
+    font-size: 22px;
+  }
+  .ma_button {
+    width: 160px;
+    font-size: 14px;
+  }
+  /* section4 : Collection */
+  .se_6_right {
+    width: 50%;
+    float: left;
+  }
+  .se_6_text {
+    padding-left: 0;
+  }
+}

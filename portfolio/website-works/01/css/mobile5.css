@@ -1,0 +1,23 @@
+@media all and (max-width:375px) {
+  .se_4_co_title {
+    left: 5%;
+    top: 90px;
+  }
+  .se_4_co_wrap .index {
+    font-size: 15px;
+    left: 5%;
+    top: 70px;
+  }
+  /* slide costom  */
+  .mySwiper2 {
+    height: 100vh;
+  }
+  .swiper-button-prev {
+    top: 90% !important;
+    left: 75% !important;
+  }
+  .swiper-button-next {
+    top: 90% !important;
+    right: 8% !important;
+  }
+}

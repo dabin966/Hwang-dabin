@@ -1,0 +1,152 @@
+@media all and (max-width: 630px) {
+  /* section_1  */
+  .img_wrap_tab {
+    width: 50%;
+  }
+  .icon_wrap {
+    width: 80%;
+  }
+  /* section_2  */
+  .mo_contents_wrap {
+    width: 85%;
+    margin: 40px auto;
+    overflow: hidden;
+  }
+  .se_2_mo_title {
+    margin: 0 auto;
+    width: 26%;
+  }
+  .mo_box {
+    width: 48%;
+    height: 280px;
+    margin-right: 0;
+  }
+  .mo_box:first-child {
+    margin-left: 0;
+  }
+  .mo {
+    font-size: 14px;
+  }
+  .mo_btn {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+  }
+  /* section_3 */
+  .se3_title_mo {
+    width: 30%;
+  }
+  .se_3_mo_slider {
+    width: 100%;
+    padding-top: 50px;
+    cursor: pointer;
+  }
+  .se_3_mo_slider_wrapper {
+    width: 200%;
+  }
+  .se_3_mo_slide {
+    width: 32%;
+    height: 550px;
+  }
+  .se_3_bottom p {
+    font-size: 16px;
+  }
+  .se_3_bottom h3 {
+    font-size: 22px;
+  }
+  .plus_btn_mo {
+    width: 40px;
+    margin: 0 auto;
+  }
+  /* section_4  */
+  .section_4 .mo_box {
+    width: 96%;
+  }
+  .section_4 .mo_box2 {
+    float: right;
+  }
+  .mo_box_text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .section_4 .mo_contents_wrap {
+    width: 85%;
+    height: 340px;
+    margin: 40px auto 0 auto;
+    overflow: hidden;
+  }
+  .section_4 .mo_btn {
+    margin: 0 auto;
+  }
+  .se_4_mo_title {
+    width: 20%;
+  }
+  /* section_5  */
+  .sec_5_title h1 {
+    font-size: 30px;
+  }
+  .sec_5_title p {
+    font-size: 16px;
+    padding-bottom: 8%;
+  }
+  .click {
+    left: 6%;
+  }
+  .right_img_tab {
+    width: 70%;
+  }
+  .left_text h1 {
+    font-size: 38px;
+    padding-top: 2%;
+  }
+  .brandstory_wrapper {
+    position: relative;
+    padding-bottom: 500px;
+  }
+  .story_tab {
+    display: none;
+  }
+  .story2 {
+    width: 93%;
+    display: block;
+    /* position: absolute; */
+    padding-top: 25%;
+  }
+  .brand_pc {
+    width: 30%;
+  }
+  .brand_pc img {
+    width: 100%;
+  }
+  .cha_con {
+    width: 90%;
+    margin: 80px auto 0 auto;
+  }
+  .cha_con_text h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #323232;
+  }
+  .cha_con_text p {
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+  .chall_title_mo {
+    width: 50%;
+    position: relative;
+    padding-left: 10%;
+  }
+  .mo_box_icon_wrap {
+    width: 25%;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  .plus_btn_mo {
+    width: 40px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,175 @@
+@media all and (max-width: 819px) {
+  /* toggle menu */
+  .mobile_box {
+    display: none;
+  }
+  .mobile_box::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url(../img/slide01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  .mobile_box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #303ab2;
+    z-index: 9;
+    display: none;
+  }
+  .tab_logo2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -55px;
+    margin-top: 25px;
+  }
+  .close_btn {
+    position: absolute;
+    top: 27px;
+    left: 36px;
+  }
+  .mobile_menu {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 48px;
+    transition-duration: 0.5s;
+  }
+  .mobile_menu li {
+    padding-bottom: 20px;
+  }
+  .mobile_menu a {
+    color: #fff;
+  }
+  .logo2 img {
+    width: 100%;
+  }
+  /* toggle menu end  */
+  /* main slide section */
+  .section_1 {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img_box_tab {
+    float: none;
+    margin: 0 auto;
+    height: 300px;
+    width: 70%;
+  }
+  .img_box_tab img {
+    display: none;
+  }
+  .text_box {
+    width: 100%;
+    text-align: center;
+  }
+  .mySwiper {
+    display: none !important;
+  }
+  .mySwiper2 {
+    display: block !important;
+  }
+  .mySwiper_tab {
+    display: none;
+  }
+  .mySwiper_mo {
+    display: block;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    position: absolute !important;
+    top: 55% !important;
+    z-index: 9 !important;
+    left: 50% !important;
+    margin-left: -50px !important;
+  }
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .img_box_tab {
+    background-image: url(../img/brandstory_mo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* main slide end  */
+  /* brand_story section  */
+  .section_2 {
+    padding-top: 12%;
+    background-image: none;
+  }
+  .text_box {
+    padding-left: 0;
+    padding-top: 5%;
+  }
+  .born {
+    padding-bottom: 1%;
+  }
+  .text_box h3 {
+    padding-top: 5%;
+  }
+  .text_box h1:last-child {
+    padding-top: 5%;
+  }
+  /* section3 : join_us  */
+  .title .table {
+    line-height: 65px;
+  }
+  .title_wrap {
+    color: white;
+    text-align: center;
+  }
+  .slide_tab {
+    top: 60%;
+  }
+  /* section5 : best_product */
+  .tab_se_5_slide {
+    padding-left: 0;
+  }
+  /* section6 : collection  */
+  .mo {
+    display: none;
+  }
+  .se_6_text {
+    padding-top: 20%;
+  }
+  .se_6_text p {
+    padding-bottom: 10%;
+  }
+  .se_6_text h2 {
+    padding-bottom: 5%;
+  }
+  /* section8 : Luxury Line  */
+  .se_8_contents {
+    width: 90%;
+    height: 400px;
+  }
+  .mark {
+    display: none;
+  }
+  .mark2 {
+    display: block;
+    position: absolute;
+    top: 270px;
+    right: 30px;
+    animation: rotate 9s infinite linear;
+  }
+  /* section9 : news  */
+  .mo_se_9 {
+    display: none;
+  }
+}

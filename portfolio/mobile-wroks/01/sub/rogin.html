@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rogin</title>
+  <!-- Fontawesome  -->
+  <script src="https://kit.fontawesome.com/65e14ac070.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* font */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+  * {margin: 0; padding: 0;}
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+ .wrap {
+  width: 100%;
+ }
+ .rogin-title {
+  width: 90%;
+  margin: 70px auto 0 auto;
+  overflow: hidden;
+ }
+ .rogin-title img {
+  width: 20px;
+  float: left;
+ }
+ .rogin-title h3 {
+  float: left;
+ }
+ .rogin-text {
+  float: left;
+ }
+ .home {
+  float: right;
+ }
+ /* rogin-title end */
+ .rogin-content {
+  width: 90%;
+  margin: 70px auto 200px;
+ }
+ .leeum-logo {
+  text-align: center;
+  margin-bottom: 50px;
+ }
+ #id-value,#password-value {
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 25px;
+  border: 1px solid #a7a7a7;
+  padding-left: 30px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+ }
+ #id-value {
+  margin-bottom: 15px;
+ }
+ #password-value {
+  margin-bottom: 20px;
+ }
+ input[type=text]:focus{
+  border:none;
+  outline: 1px solid #000;
+}
+input[type=text]:focus::placeholder {
+  transition: 0.6s;
+  opacity: 0;
+  visibility: hidden;
+}
+input[type=text]::placeholder {
+  color: #a7a7a7;
+}
+.find {
+  font-size: 14px;
+  overflow: hidden;
+  color: #838383;
+  margin-bottom: 40px;
+}
+.find label {
+  float: left;
+}
+.find div {
+  float: right;
+}
+.find div span {
+  display: block;
+  float: left;
+  padding: 0 5px;
+}
+.id-find {
+  position: relative;
+}
+.id-find::after{
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #838383;
+  position: absolute;
+  right: -3px;
+}
+.find div span:hover {
+  color: #000;
+}
+.login-btn,.join {
+  width: 100%;
+  border:1px solid #000;
+  box-sizing: border-box;
+  padding: 25px 0;
+  border-radius: 50px;
+  text-align: center;
+}
+.login-btn {
+  margin-bottom: 10px;
+  background-color: #000;
+  font-weight: 600;
+}
+.login-btn a {
+  color: #fff;
+}
+</style>
+<body>
+  <div class="wrap">
+    <div class="rogin-title">
+      <div class="rogin-text">
+        <img src="../images/suggestion-img.png" alt="login-logo">
+        <h3>로그인</h3>
+      </div>
+      <div class="home">
+        <a href="../html/index.html"><i class="fa-solid fa-house"></i></a>
+      </div>
+    </div>
+    <div class="rogin-content">
+      <div class="leeum-logo">
+        <img src="../images/login-reeumlogo.png" alt="reeumlogo">
+      </div>
+      <input type="text" id="id-value" placeholder="아이디를 입력해주세요">
+      <input type="text" id="password-value" placeholder="비밀번호를 입력해주세요">
+      <div class="find">
+        <label><input type="checkbox" name="save" value="id-save"> 아이디 저장</label>
+        <div>
+          <span class="id-find">아이디 찾기</span>
+          <span>비밀번호 찾기</span>
+        </div>
+      </div>
+      <div class="login-btn"><a href="#">로그인</a></div>
+      <div class="join"><a href="#">회원이 아니신가요? 가입하기</a></div>
+    </div>
+  </div>
+  
+</body>
+</html>

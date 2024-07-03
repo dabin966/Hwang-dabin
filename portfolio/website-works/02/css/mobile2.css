@@ -1,0 +1,71 @@
+@media all and (max-width: 820px) {
+  /* common  */
+  .section_1,
+  .section_2,
+  .section_3,
+  .section_4,
+  .section_5 {
+    padding-top: 15% 0;
+  }
+  /* header  */
+  header {
+    height: 70px;
+  }
+  .log {
+    display: none;
+  }
+  .img_box {
+    height: 600px;
+    margin-top: 46px;
+  }
+  .tab_logo {
+    display: none;
+  }
+  .logo {
+    display: block;
+    width: 90px;
+    top: 15px;
+    margin-left: -45px;
+  }
+  .toggle {
+    width: 28px;
+    margin-top: 5px;
+  }
+  .toggle img {
+    width: 100%;
+  }
+  /* section_1  */
+  .top_bg {
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+  }
+  .title_box h1 {
+    font-size: 48px;
+  }
+  .title_box p {
+    font-size: 15px;
+  }
+  .title_box .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .icon_box {
+    height: 110px;
+  }
+  .icon_wrap {
+    width: 70%;
+    padding-top: 20px;
+  }
+  .img_wrap_tab {
+    width: 40%;
+  }
+  .img_wrap_tab img {
+    width: 100%;
+  }
+  .text_wrap h3 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,22 @@
+@media all and (max-width: 1735px) {
+
+  /* section_1 title  */
+  .se_2_title h3 {
+    font-size: 50px;
+  }
+
+  .se_2_title h3::after {
+    left: 300px;
+  }
+
+  /* section_4 slide-button position  */
+  .swiper-button-next {
+    top: 15% !important;
+    right: 15% !important;
+  }
+
+  .swiper-button-prev {
+    top: 15% !important;
+    left: 77% !important;
+  }
+}

@@ -1,0 +1,102 @@
+@media all and (max-width: 415px) {
+  /* mobile menu  */
+  .mo_box_icon_wrap {
+    width: 30%;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  /* section_3  */
+  .se_3_mo_slide {
+    width: 35%;
+    height: 400px;
+  }
+   .se_3_img_wrap {
+    width: 85%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-left: 2px;
+  }
+  .se_3_bottom p {
+    font-size: 14px;
+  }
+  .se_3_bottom h3 {
+    font-size: 18px;
+  }
+  .se_3_top {
+    width: 70%;
+    height: 40%;
+  }
+  /* section_4  */
+  .mo_box {
+    width: 48%;
+    height: 200px;
+    margin-right: 0;
+  }
+  .mo_btn {
+    width: 22%;
+  }
+  .section_4 .mo_contents_wrap {
+    height: 280px;
+  }
+  .mo_box_text {
+    bottom: 40px;
+    font-size: 14px;
+  }
+  /* section_5  */
+  .click p {
+    position: absolute;
+    left: 25%;
+    top: 7%;
+    color: #d87947;
+    font-size: 13px;
+  }
+  /* section_6  */
+  .left_text h1 {
+    font-size: 30px;
+    padding-top: 2%;
+  }
+  .brand_pc {
+    width: 40%;
+  }
+  .brand_pc img {
+    width: 100%;
+  }
+  .story2 {
+    font-size: 14px;
+    padding-top: 25%;
+  }
+  .challenge_wrapper {
+    padding-top: 0%;
+  }
+  .cha_con_text h3 {
+    font-size: 20px;
+  }
+  .cha_con_text p {
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+  .cha_con_text .cha_btn {
+    font-size: 13px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #7a583d;
+    box-sizing: border-box;
+    border-radius: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  /* section_7  */
+  .sec_7_title {
+    width: 65%;
+  }
+  /* footer  */
+  .sns_wrap {
+    width: 25%;
+  }
+  footer {
+    height: 400px;
+  }
+  .contact p {
+    padding-bottom: 7%;
+  }
+}

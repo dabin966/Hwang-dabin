@@ -1,0 +1,341 @@
+@media (max-width: 768px) {
+  /* Default CSS */
+  body.active {
+    overflow: hidden;
+  }
+  /* Header */
+  .header-inner {
+    width: 100%;
+  }
+  .gnb {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.219);
+    right: -250px;
+    transition: 0.5s;
+    padding-top: 100px;
+    padding-right: 20px;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .gnb a {
+    display: block;
+    color: #000;
+    text-align: right;
+  }
+  /* feature1  */
+  #feature1 {
+    width: 100%;
+  }
+  #feature1 .main-intro {
+    width: 100%;
+  }
+  .main-intro .person{
+    float: left !important;
+    margin: 100px 0 0 0 !important;
+    border-radius: 0 !important;
+  }
+  #feature1 .home-text {
+    margin-top: 400px;
+    margin-left: 20px;
+   }
+  .home-text .name span {
+    margin-right: 30px;
+    text-align: center;
+    display:inline;
+  }
+  .home-text h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+ }
+  .introduce {
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    width: 100%;
+  }
+ .left-content {
+    float: none !important;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  .introduce {
+    width: 100%;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+  }
+  .introduce-text {
+    margin-top: 500px;
+    text-align: center;
+    position: relative;
+    float: none !important;
+ }
+  .introduce-text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .left-content .main-text {
+    margin-top: 200px;
+    z-index: 9;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .left-content .main-text h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .left-content .main-text span {
+    bottom: -10px;
+ }
+  .left-content img:nth-child(1) {
+    z-index: 9;
+    left: 100px;
+    top: 130px;
+    width: 220px;
+  } 
+  .left-content img:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+ }
+  .career-wrap li span:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 5px 0;
+    display: inline-block;
+  }
+    /* feature2  */
+    #feature2 {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 0;
+  }
+   .title h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+    .title h1 span {
+    font-size: 50px;
+   }
+   .sub-title {
+    width: 120px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff700;
+    border: 1px solid #fff700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 1p;
+    margin-bottom: 10px;
+}
+  .skill-wrap {
+    list-style: none;
+    width: 100%;
+    margin-top: 80px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 35px;
+  }
+  .skill-text {
+    font-size: 14px;
+  }
+  .skill-text em {
+    font-size: 20px;
+  }
+   /* feature3  */
+   #feature3 {
+    padding-top: 200px;
+   }
+   .mobile-text {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+  .mobile-sub-title {
+    font-size: 18px;
+    margin: 0 auto;
+}
+  /* Trigger */
+  .trigger {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .trigger.active {
+    color: #000;
+  }
+  .mobile-img {
+    text-align: center;
+    float: none;
+  }
+  .mobile-img img {
+    width: 500px;
+  }
+  .mobile-text {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .mobile-text .title h1 {
+    font-size: 50px;
+  }
+  .web-name {
+    display: none;
+  }
+  .overview p, .making-about p {
+    font-size: 15px;
+    margin: 0 !important;
+  } 
+  .overview h6, .making-about h6 {
+    display: none;
+  }
+  .mobile-btn {
+    width: 160px;
+    height: 46px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    float: none !important;
+    margin: auto;
+  }
+   /* feature4  */
+  #feature4 {
+    padding-top: 200px;
+  }
+  #feature4 .title h1 {
+    font-size: 50px;
+  }
+  #feature4 .title h1 span {
+    font-size: 50px;
+    padding-right: 0;
+  }
+  .tab-wrap {
+    margin-bottom: 50px;
+  } 
+  .tab-wrap li {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 600;
+    cursor: pointer;
+ }
+  .content-img {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .tab-content {
+    height: 900px;
+ }
+  .tab-content .tab-co {
+    left: 50%;
+    margin-left: -250px;
+  }
+  .content-text {
+   text-align: center;
+   float: none;
+   margin-left: 0;
+  }
+  .content-logo img {
+    width: 200px;
+  }
+  .magazine .content-logo img {
+    width: 50px;
+  }
+  .content-logo p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0 !important;
+ } 
+  .content-text .overview {
+    margin-bottom: 10px;
+  }
+  .content-btn {
+  margin-top: 0;
+  }
+   /* feature5  */
+   #feature5 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    margin-bottom: 500px;
+    background: #000;
+}
+   #feature5 .title {
+    margin-bottom: 50px;
+  }
+  #feature5 .title h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+  #feature5 .title h1 span {
+    font-size: 50px;
+  }
+  .coding-content-wrap {
+    left: 90px;
+    width: 60%;
+  }
+  .practical-content a {
+    width: 150px;
+    height: 150px;
+    float: none;
+    display: inline-block;
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+  #feature5 .practical-tab li {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  #feature5 .practical-tab li {
+    margin-bottom: 40px;
+    font-size: 20px;
+    width: 120px;
+  }
+  #feature5 .practical-tab li:hover, #feature5 .practical-tab li.active {
+    width: 120px;
+  }
+  #feature6 h3 {
+    font-size: 38px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    line-height: 50px;
+  }
+  #feature6 p {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .hover .practical-img-7 {
+    margin-top:0;
+  }
+  /* Section Layout  */
+  .inner {
+    width: 100%;
+  }
+  section h1 {
+    font-size: 2em;
+  }
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+ 

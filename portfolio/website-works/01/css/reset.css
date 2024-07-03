@@ -1,0 +1,22 @@
+*{margin:0; padding:0;}
+body{
+    font-family:'Noto Sans KR',sans-serif;
+    color: #222;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#222;
+    display: block;
+}
+img{
+    display: block;
+    border:0;
+}
+img,svg{
+    vertical-align: middle;
+}
+    
+ 

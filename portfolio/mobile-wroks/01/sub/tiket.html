@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tiket</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <!-- Fontawesome  -->
+   <script src="https://kit.fontawesome.com/65e14ac070.js" crossorigin="anonymous"></script>
+</head>
+ <style>
+   /* font */
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+  * {margin: 0; padding: 0;}
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #222;
+  }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .wrap {
+    width: 100%;
+  }
+  /* header */
+  header {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+  }
+  .in-header {
+    width: 90%;
+    height: 100%;
+    line-height: 55px;
+    margin: 0 auto;
+  }
+  .logo {
+    float: left;
+    padding-top: 5px;
+    width: 70px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .rogin {
+    float: right;
+  }
+  /* tiket-top  */
+  .titket-top {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 50px;
+    padding-left: 10px;
+  }
+  .title {
+    width: 100%;
+    overflow: hidden;
+    /* background-color: lightblue;  */
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  .title img {
+    float: left;
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .title h3 {
+    float: left;
+  }
+  /* top-tab  */
+  .top-tab {
+    width: 90%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    text-align: center;
+  }
+  .top-tab li {
+    float: left;
+    width: 33.333%;
+    font-size: 18px;
+    position: relative;
+    padding-top: 3px;
+  }
+  .top-tab li.active {
+    font-weight: 600;
+  }
+  .top-tab li.active::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #d91900;
+  border-radius: 50%;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top: 0;
+ }
+ .top-tab li.active a {
+    color:#424242
+  }
+ .top-tab li a {
+    color: #a7a7a7;;
+  }
+  .tiket-contents {
+    width: 90%;
+    margin:180px auto;
+  }
+  .con {
+    width: 100%;
+    height: 340px;
+    background-color: #000;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: #fff;
+    padding: 50px 0 0 0 ;
+    position: relative;
+    transition: 0.6s;
+  }
+  .con.active {
+    background-color: #651f15;
+  }
+  .con.active .tiket-btn {
+    background-color: #555;
+  }
+  .con-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .con-img {
+    width: 98%;
+    height: 170px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .con-img1 {
+    background-image: url(../images/tiket-img-1.jpg);
+  }
+  .con-img2  {
+    background-image: url(../images/tiket-img-2.jpg);
+  }
+  .con-img3 {
+    background-image: url(../images/tiket-img-3.jpg);
+  }
+  .con-img4 {
+    background-image: url(../images/tiket-img-4.jpg);
+  }
+  .con-img5{
+    background-image: url(../images/tiket-img-5.jpg);
+  }
+  .con-img6 {
+    background-image: url(../images/tiket-img-6.jpg);
+  }
+  .con-text p:first-child {
+    margin-top: 20px;
+  }
+  .con-text span {
+    font-size: 14px;
+  }
+  .con-text .date {
+    padding: 10px 0;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .tiket-btn {
+    width: 77px;
+    height: 28px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000;
+    color: #fff;
+  }
+  /* tiket bottom  */
+  .tiket-bottom {
+    width: 100%;
+    height: 93px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+  }
+  .select {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .ticketing-btn {
+    width: 100%;
+    height: 55px;
+    background-color: #b5b5b5;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    line-height: 55px;
+  }
+  .ticketing-btn.active {
+    background-color: #000;
+  }
+   /* bottom */
+ .bottom {
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+ }
+ .bottom-border {
+    width: 133px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main-tab {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-tab li {
+    width: 20%;
+    height: 20px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .iconcolor {
+    color: #868e96;
+    opacity: 0.5;
+  }
+  .iconcolor.active {
+    color: #000;
+    opacity: 1;
+    position: relative;
+  }
+  .iconcolor.active::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #d91900;
+    border-radius: 50%;
+    position: absolute;
+    left:30px;
+    bottom: 10px;
+  }
+  .main-tab li i {
+    width: 50px;
+  }
+  .tab-menu {
+    width: 90%;
+    margin: 40px auto 10px auto;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .tab-menu a {
+    color: #a7a7a7;
+    position: relative;
+    transition: 0.6s;
+  }
+  .tab-menu a.active {
+    color: #424242;
+    font-weight: 600;
+  }
+  .tab-menu a.active::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #d91900;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 22px;
+  }
+  .tab-menu a:nth-child(1) {
+    margin-right: 10px;
+  }
+ </style>
+<body>
+ <div class="wrap">
+  <header>
+    <div class="in-header">
+      <div class="logo"><a href="#"><img src="../images/header-logo.png" ></a></div>
+      <div class="rogin"><a href="../sub/rogin.html"><i class="fa-solid fa-power-off"></i></a></div>
+    </div>
+  </header>
+  <div class="titket-top">
+    <div class="title">
+      <img src="../images/suggestion-img.png" alt="logo">
+      <h3>온라인 예약ㆍ예매</h3>
+    </div>
+      <ul class="top-tab">
+        <li class="active"><a href="#none">EXHIBITION</a></li>
+        <li><a href="#none">PROGRAM</a></li>
+        <li><a href="#none">EVENT</a></li>
+      </ul> 
+    </div>
+      <div class="tiket-contents">
+        <div class="con">
+          <div class="con-inner">
+            <div class="con-img con-img1"></div>
+            <div class="con-text">
+              <p>[상설전]리움 소장품(고미술,현대미술)</p>
+              <div class="date">
+                <span>2022.01.01 ~</span>
+                <span>무료</span>
+              </div>
+               <p class="location">장소:(고미술),M2(현대미술)</p>
+            </div>
+          </div>
+          <button class="tiket-btn">선택</button>
+        </div>
+        <div class="con">
+          <div class="con-inner">
+            <div class="con-img con-img2"></div>
+            <div class="con-text">
+              <p>이안 쳉:세계건설</p>
+              <div class="date">
+                <span>2022.03.02 ~ 2022.07.03</span>
+                <span>무료</span>
+              </div>
+               <p class="location">리움 미술관</p>
+            </div>
+          </div>
+          <button class="tiket-btn">선택</button>
+        </div>
+        <div class="con">
+          <div class="con-inner">
+            <div class="con-img con-img3"></div>
+            <div class="con-text">
+              <p>움직이는 조각 알렌산더 칼더</p>
+              <div class="date">
+                <span>2022.07.18 ~ 2022.10.20</span>
+                <span>무료</span>
+              </div>
+               <p class="location">리움 Black Box 옆</p>
+            </div>
+          </div>
+          <button class="tiket-btn">선택</button>
+        </div>
+        <div class="con">
+          <div class="con-inner">
+            <div class="con-img con-img4"></div>
+            <div class="con-text">
+              <p>2022 서울 아트 스펙트럼</p>
+              <div class="date">
+                <span>2022.03.02~2022.07.03</span>
+                <span>무료</span>
+              </div>
+               <p class="location">그라운드 갤러리</p>
+            </div>
+          </div>
+          <button class="tiket-btn">선택</button>
+        </div>
+        <div class="con">
+          <div class="con-inner">
+            <div class="con-img con-img5"></div>
+            <div class="con-text">
+              <p>2022 서울 아트 스펙트럼</p>
+              <div class="date">
+                <span>2022.03.02~2022.07.03</span>
+                <span>무료</span>
+              </div>
+               <p class="location">그라운드 갤러리</p>
+            </div>
+          </div>
+          <button class="tiket-btn">선택</button>
+        </div>
+        <div class="con">
+          <div class="con-inner">
+            <div class="con-img con-img6"></div>
+            <div class="con-text">
+              <p>2022 서울 아트 스펙트럼</p>
+              <div class="date">
+                <span>2022.03.02~2022.07.03</span>
+                <span>무료</span>
+              </div>
+               <p class="location">그라운드 갤러리</p>
+            </div>
+          </div>
+          <button class="tiket-btn">선택</button>
+        </div>
+       <div class="tiket-bottom">
+        <div class="select">
+          <p>관람을 원하는 전시를 선택해주세요</p>
+        </div>
+        <div class="ticketing-btn">예매하기</div>
+       </div>
+      </div>
+    
+  
+  <div class="bottom">
+    <ul class="main-tab">
+      <li><a href="../html/index.html"><i class="fa-solid fa-house fa-lg iconcolor "></i></a></li>
+      <li><a href="../sub/rogin.html"><i class="fa-solid fa-user fa-lg iconcolor"></i></a></li>
+      <li><i class="fa-solid fa-ticket-simple fa-lg iconcolor active"></i></li>
+      <li><i class="fa-solid fa-location-dot fa-lg iconcolor"></i></li>
+      <li><i class="fa-solid fa-book fa-lg iconcolor"></i></li>
+    </ul>
+    <div class="bottom-border"></div>
+  </div>
+ </div>
+ <script>
+
+  $('.con').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('.ticketing-btn').addClass('active');
+  });
+ 
+ </script>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+@media all and (max-width: 1380px) {
+
+  /* section_2 */
+  .se_2_title h3 {
+    font-size: 43px;
+    line-height: 60px;
+  }
+
+  .se_2_title h3::after {
+    top: 30px;
+    left: 250px;
+    height: 4px;
+    width: 70px;
+  }
+
+  .se_2_title p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .se_2_co li {
+    width: 32%;
+    height: 305px;
+    background-color: #dff1e6;
+    float: left;
+    margin-right: 2%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .data p {
+    font-size: 14px;
+  }
+
+  /* section_3  */
+  .se_3_title p {
+    font-size: 15px;
+  }
+
+  .se_3_text_box h3 {
+    font-size: 28px;
+  }
+
+  .se_4_title p {
+    font-size: 15px;
+  }
+
+  .se_4_co_title h3 {
+    font-size: 32px;
+    padding-bottom: 5%;
+  }
+
+  .se_4_co_title p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  /* section_7  */
+  .se_7_title h2 {
+    font-size: 50px;
+  }
+
+  .section_7 {
+    width: 100%;
+    height: 635px;
+    background-image: url(../img/se_7_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* footer  */
+  .footer_menu li {
+    float: left;
+    padding-right: 25px;
+    position: relative;
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,25 @@
+@media all and (max-width:860px) {
+	/* header  */
+	.lnb_wrap {
+    width: calc(100% - 300px) !important;
+  }
+  .lnb_grid .lnb_wrap .dp1 {
+    width: 50%;
+  }
+	/* section_4  */
+  .se_4_co_title {
+    position: absolute;
+    left: 60px;
+    top: 30px;
+  }
+  .index {
+    left: 60px;
+    top: 0;
+  }
+	/* footer family-site  */
+  .fa_wrap {
+    width: 18%;
+    height: 40px;
+  }
+  
+}

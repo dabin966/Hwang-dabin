@@ -1,0 +1,44 @@
+@media all and (max-width:500px) {
+  /* section_1  */
+  .slide_title_wrap p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .search_box {
+    width: 90%;
+    transform: translateX(-50%);
+    padding: 30px 20px 20px 40px;
+  }
+  /* section_4  */
+  .section_4 {
+    position: relative;
+    padding-top: 0;
+  }
+  .se_4_co_title {
+    position: absolute;
+    left: 60px;
+    top: 120px;
+  }
+  .se_4_co_wrap .index {
+    font-size: 15px;
+    left: 60px;
+    top: 90px;
+  }
+  /* section_4 slider costom  */
+  .mySwiper2 {
+    height: 90vh;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 150% !important;
+  }
+  .swiper-button-next {
+    top: 90% !important;
+    right: 15% !important;
+  }
+  .swiper-button-prev {
+    top: 90% !important;
+    left: 68% !important;
+  }
+}

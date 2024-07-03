@@ -1,0 +1,281 @@
+@media (max-width: 645px) {
+header {
+  padding: 15px;
+}
+.logo {
+  font-size: 18px;
+}
+#feature1 .home-text {
+  margin-top: 300px;
+}
+.home-text h1 {
+  font-size: 30px;
+}
+.home-text h6 {
+  font-size: 14px;
+}
+.main-intro .person {
+  float: left !important;
+  margin: 80px 0 20px 0 !important;
+  border-radius: 0 !important;
+}
+.name {
+  margin-top: 0;
+}
+.introduce {
+  width: 100%;
+  margin: 50px auto 0 auto;
+  overflow: hidden;
+}
+.left-content img:nth-child(1) {
+  width: 180px;
+}
+.left-content img:nth-child(2) {
+  width: 300px;
+}
+.left-content .main-text h2 {
+  font-size: 15px;
+  line-height: 30px;
+}
+.left-content .main-text::after,
+.left-content .main-text::before{
+  width: 30px;
+  height: 100px;
+}
+.left-content .main-text::after {
+  bottom: -15px;
+  right: -40px;
+}
+.left-content .main-text::before {
+  bottom: -15px;
+  left: -40px;
+}
+.left-content .main-text {
+  margin-top: 120px;
+}
+.introduce-text {
+  margin-top: 400px;
+}
+.introduce-text p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.explanation {
+  padding: 20px;
+}
+.career {
+  margin-top: 0;
+}
+.career-wrap {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding: 10px;
+}
+.career-wrap li {
+  margin-right: 2px;
+}
+.career-wrap li span:nth-of-type(1) {
+  font-size: 10px;
+}
+.career-wrap li span:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 5px 0;
+  display: inline-block;
+}
+.career-wrap li span:nth-of-type(3) {
+  font-size: 11px;
+}
+#feature2 {
+  padding-top: 100px;
+}
+.title h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.title h1 span {
+  font-size: 30px;
+}
+.skill-wrap li .skill-logo .s-logo {
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.skill-text {
+  display: none;
+}
+.skill-wrap {
+  list-style: none;
+  width: 100%;
+  margin-top: 30px;
+  height: auto;
+  display: inline-block;
+  padding: 0 35px;
+}
+.skill-wrap li {
+ width: auto;
+}
+.skill-wrap-03 {
+  margin: 0;
+}
+#feature3 {
+  padding-top: 100px;
+}
+.mobile-img img {
+  width: 300px;
+}
+.mobile-sub-title {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+.mobile-text .title h1 {
+  font-size: 30px;
+}
+.overview p, .making-about p {
+  font-size: 13px;
+  margin: 0 !important;
+  line-height: 22px;
+}
+.mobile-text {
+  margin-top: 30px;
+  font-size: 14px;
+  padding: 20px;
+}
+.mobile-btn {
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 30px;
+  float: none !important;
+  margin: auto;
+  font-size: 14px;
+}
+#feature4 {
+  padding-top: 100px;
+}
+#feature4 .title h1 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+#feature4 .title h1 span {
+  font-size: 30px;
+}
+#feature4 .sub-title {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+.tab-wrap li {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 30px;
+}
+.tab-wrap {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content-img {
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 0;
+}
+.tab-content .tab-co {
+  left: 50%;
+  margin-left: -200px;
+}
+.content-text {
+  text-align: center;
+  float: none;
+  margin-left: 0;
+  padding: 30px;
+}
+.content-btn a {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+  font-size: 12px;
+}
+.tab-content {
+  height: 700px;
+}
+#feature5 {
+  padding-bottom: 400px;
+}
+#feature5 .title h1 {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+#feature5 .title h1 span {
+  font-size: 30px;
+}
+#feature5 .practical-tab {
+  float: none;
+  width: auto;
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+}
+#feature5 .practical-tab li {
+  width: auto;
+  font-size: 16px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  display: inline-block;
+}
+#feature5 .practical-tab li:last-child {
+  margin-right: 0;
+}
+#feature5 .practical-tab li.active,
+#feature5 .practical-tab li:hover {
+  border: none;
+  width: auto;
+  padding: 0;
+  display: inline-block;
+}
+.practical-content {
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+}
+.practical-content a {
+  width: 100px;
+  height: 100px;
+  float: none;
+}
+.coding-content-wrap {
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+}
+#feature6 {
+  height: 345px;
+  padding: 50px 20px 0 20px;
+}
+#feature6 h3 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+}

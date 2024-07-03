@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoppingMall-card</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/65e14ac070.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+  <div class="item">
+    <img src="women.jpg">
+    <div class="detail">
+      <div class="title">
+        <div class="title-wrap">
+          <h3>Nightgown</h3>
+          <h3 class="color">$55.99</h3>
+        </div>
+          <p>women's Designer Wear</p>
+      </div>
+      <div class="content">
+        <div class="sizes">
+          <div class="sizes-wrap">
+            <p>Sizes</p>
+           <div class="heart"><i class="fa-solid fa-heart"></i></div>
+          </div>
+           <ul>
+            <li>Xs</li>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+           </ul>
+        </div>
+        <div class="color">
+          <p>Colors</p>
+          <ul>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+          </ul>
+       </div>
+      </div>
+      <a href="#">Add to Cart</a>
+    </div>
+  </div>
+  <script>
+    $('.color ul li').click(function(){
+      $(this).toggleClass('active');
+      $(this).siblings().removeClass('active')
+    });
+    $('.heart i').click(function(){
+      $(this).toggleClass('active');
+    });
+  </script>
+</body>
+</html>
